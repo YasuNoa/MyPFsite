@@ -13,6 +13,8 @@ const iosApps = [
     techStack:["Swift","UIkit"],
     appStoreUrl:"https://apps.apple.com/jp/app/studyarena/id6748235227?l=en-US",
     features:[""]
+
+    
   
 
   }
@@ -32,7 +34,7 @@ const iosApps = [
       <section className="h-screen bg-gradient-to-b from-gray-900 to-gray-800">
       
       <div className="h-full flex items-center justify-center">
-        <h1 className="text-5xl text-white">Yasu's portfolio</h1>
+        <h1 className="text-5xl text-white">Yasu\'s portfolio</h1>
         </div>
       </section>
 
