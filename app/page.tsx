@@ -1,3 +1,6 @@
+
+import Link from 'next/link'
+
 export default function Home(){
 
 const iosApps = [
@@ -25,8 +28,8 @@ const iosApps = [
       <nav className="fixed top-0 right-0 p-6 z-50">
         <div className="flex gap-6">
          <a href="#work" className="text-white hover:text-gray-300 transition-colors">work</a>
-         <a href="#about" className="text-white hover:text-gray-300 transition-colors">about</a>
-         <a href="#contact" className="text-white hover:text-gray-300 transition-colors">contact</a>
+         <Link href="/mypage/about" className="text-white hover:text-gray-300 transition-colors">about</Link>
+         <Link href="mypage/contact" className="text-white hover:text-gray-300 transition-colors">contact</Link>
         </div>
       </nav>
 

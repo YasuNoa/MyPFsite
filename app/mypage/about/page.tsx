@@ -1,6 +1,11 @@
+import Link from "next/link";
+
 export default function AboutPage() {
     return(
         <section className="min-h-screen bg-gradient-to-b from-gray-900 to-gray-800 p-8">
+            <Link href="/" className="fixed top-6 left-6 text-white hover:text-gray--300">
+            ← Back to Home
+            </Link>
          <div className="max-w-4xl mx-auto pt-20">
           <h1 className="text-4xl font-bold text-white mb-8">about me</h1>
           <div className="text-gray-300 space-y-4">
