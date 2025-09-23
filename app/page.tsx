@@ -16,10 +16,17 @@ const iosApps = [
     techStack:["Swift","UIkit"],
     appStoreUrl:"https://apps.apple.com/jp/app/studyarena/id6748235227?l=en-US",
     features:[""]
-
+  },
+  {
+    id:2,
+    name:"StudyArena",
+    description: `簡単なタスクを管理できます。
     
-  
-
+    みやすいUIとシンプルかつ簡単な操作で、ユーザーの生産性を向上させます。`,
+    icon:"/images/apps/1.png",
+    techStack:["Swift","UIkit"],
+    appStoreUrl:"https://apps.apple.com/jp/app/%E8%B6%85%E3%82%BF%E3%82%B9%E3%82%AF%E7%AE%A1%E7%90%86/id6747072667?l=en-US",
+    features:[""]
   }
 ]
 
