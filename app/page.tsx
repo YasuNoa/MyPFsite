@@ -1,9 +1,20 @@
 
 import Link from 'next/link'
+import { JSX } from 'react';
 
-export default function Home(){
+interface IosApp {
+  id: number;
+  name:string;
+  description:string;
+  icon:string
+  techStack:string[];
+  appStoreUrl:string;
+  features: string[];
+}
 
-const iosApps = [
+export default function Home(): JSX.Element{
+
+const iosApps: IosApp[] = [
   {
     id:1,
     name:"StudyArena",
@@ -19,7 +30,7 @@ const iosApps = [
   },
   {
     id:2,
-    name:"StudyArena",
+    name:"超タスク管理",
     description: `簡単なタスクを管理できます。
     
     みやすいUIとシンプルかつ簡単な操作で、ユーザーの生産性を向上させます。`,
@@ -53,7 +64,7 @@ const iosApps = [
           <h2 className="text-3xl text-white mb-8">MyApp</h2>
 
          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
-          {iosApps.map(app => (
+          {iosApps.map((app: IosApp) => (
           <div key={app.id} className="bg-gray-900 rounded-lg p-6 hover:transform hover:scale-105 transition-all">
             <div className="w-20 h-20 bg-gray-700 rounded-2xl mb-4 overflow-hidden">
                <img 

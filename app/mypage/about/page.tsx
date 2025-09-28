@@ -1,6 +1,8 @@
 import Link from "next/link";
+import { JSX } from "react";
 
-export default function AboutPage() {
+
+export default function AboutPage(): JSX.Element {
     return(
         <section className="min-h-screen bg-gradient-to-b from-gray-900 to-gray-800 p-8">
             <Link href="/" className="fixed top-6 left-6 text-white hover:text-gray--300">

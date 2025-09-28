@@ -1,4 +1,5 @@
 import Link from "next/link"
+import {JSX, FormEvent, ChangeEvent,useState} from 'react';
 
 export default function ContactPage() {
     return (
