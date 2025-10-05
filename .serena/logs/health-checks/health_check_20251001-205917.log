@@ -1,0 +1,60 @@
+INFO  2025-10-01 20:59:17,347 serena.cli:health_check:557 - Starting health check for project: /Volumes/Extreme SSD/myblog/myblog-ec2
+INFO  2025-10-01 20:59:17,347 serena.cli:health_check:561 - Creating SerenaAgent with disabled dashboard...
+INFO  2025-10-01 20:59:17,393 serena.agent:__init__:204 - Starting Serena server (version=0.1.4-411743b6-dirty, process id=50496, parent process id=50487)
+INFO  2025-10-01 20:59:17,393 serena.agent:__init__:205 - Configuration file: None
+INFO  2025-10-01 20:59:17,393 serena.agent:__init__:206 - Available projects: 
+INFO  2025-10-01 20:59:17,393 serena.agent:__init__:207 - Loaded tools (36): read_file, create_text_file, list_dir, find_file, replace_regex, delete_lines, replace_lines, insert_at_line, search_for_pattern, restart_language_server, get_symbols_overview, find_symbol, find_referencing_symbols, replace_symbol_body, insert_after_symbol, insert_before_symbol, write_memory, read_memory, list_memories, delete_memory, execute_shell_command, activate_project, remove_project, switch_modes, get_current_config, check_onboarding_performed, onboarding, think_about_collected_information, think_about_task_adherence, think_about_whether_you_are_done, summarize_changes, prepare_for_new_conversation, initial_instructions, jet_brains_find_symbol, jet_brains_find_referencing_symbols, jet_brains_get_symbols_overview
+INFO  2025-10-01 20:59:17,393 serena.config.serena_config:apply:106 - SerenaAgentContext[name='desktop-app'] included 1 tools: switch_modes
+INFO  2025-10-01 20:59:17,393 serena.agent:__init__:221 - Number of exposed tools: 26
+INFO  2025-10-01 20:59:17,402 serena.agent:_update_active_tools:401 - Active tools (26): activate_project, check_onboarding_performed, create_text_file, delete_memory, execute_shell_command, find_file, find_referencing_symbols, find_symbol, get_current_config, get_symbols_overview, insert_after_symbol, insert_before_symbol, list_dir, list_memories, onboarding, prepare_for_new_conversation, read_file, read_memory, replace_regex, replace_symbol_body, search_for_pattern, switch_modes, think_about_collected_information, think_about_task_adherence, think_about_whether_you_are_done, write_memory
+INFO  2025-10-01 20:59:17,403 serena.util.file_system:start:329 - Loading of .gitignore files starting ...
+INFO  2025-10-01 20:59:17,404 serena.util.file_system:_load_gitignore_files:148 - Processing .gitignore file: /Volumes/Extreme SSD/myblog/myblog-ec2/.gitignore
+INFO  2025-10-01 20:59:17,406 serena.util.file_system:_load_gitignore_files:148 - Processing .gitignore file: /Volumes/Extreme SSD/myblog/myblog-ec2/.serena/.gitignore
+INFO  2025-10-01 20:59:17,411 serena.util.file_system:stop:336 - Loading of .gitignore files completed in 0.008 seconds
+INFO  2025-10-01 20:59:17,411 serena.agent:load_project_from_path_or_name:476 - Added new project myblog-ec2 for path /Volumes/Extreme SSD/myblog/myblog-ec2
+INFO  2025-10-01 20:59:17,411 serena.agent:_activate_project:441 - Activating myblog-ec2 at /Volumes/Extreme SSD/myblog/myblog-ec2
+INFO  2025-10-01 20:59:17,411 serena.agent:_update_active_tools:401 - Active tools (26): activate_project, check_onboarding_performed, create_text_file, delete_memory, execute_shell_command, find_file, find_referencing_symbols, find_symbol, get_current_config, get_symbols_overview, insert_after_symbol, insert_before_symbol, list_dir, list_memories, onboarding, prepare_for_new_conversation, read_file, read_memory, replace_regex, replace_symbol_body, search_for_pattern, switch_modes, think_about_collected_information, think_about_task_adherence, think_about_whether_you_are_done, write_memory
+INFO  2025-10-01 20:59:17,411 serena.agent:issue_task:420 - Scheduling Task-1[init_language_server]
+INFO  2025-10-01 20:59:17,411 serena.agent:start:329 - Task-1[init_language_server] starting ...
+INFO  2025-10-01 20:59:17,411 serena.cli:health_check:564 - SerenaAgent created successfully
+INFO  2025-10-01 20:59:17,411 serena.agent:start:329 - Language server initialization starting ...
+INFO  2025-10-01 20:59:17,412 serena.cli:health_check:567 - Searching for analyzable files...
+INFO  2025-10-01 20:59:17,412 serena.project:create_language_server:303 - Creating language server instance for /Volumes/Extreme SSD/myblog/myblog-ec2.
+INFO  2025-10-01 20:59:17,425 serena.cli:health_check:576 - Found analyzable file: eslint.config.mjs
+INFO  2025-10-01 20:59:17,425 serena.cli:health_check:594 - Testing GetSymbolsOverviewTool on file: eslint.config.mjs
+INFO  2025-10-01 20:59:17,425 serena.agent:issue_task:420 - Scheduling Task-2[<lambda>]
+INFO  2025-10-01 20:59:17,451 solidlsp:load_cache:1576 - Loading document symbols cache from /Volumes/Extreme SSD/myblog/myblog-ec2/.serena/cache/typescript/document_symbols_cache_v23-06-25.pkl
+INFO  2025-10-01 20:59:17,452 solidlsp:load_cache:1580 - Loaded 14 document symbols from cache.
+INFO  2025-10-01 20:59:17,452 serena.agent:reset_language_server:594 - Starting the language server for myblog-ec2
+INFO  2025-10-01 20:59:17,452 solidlsp:start:1622 - Starting language server with language typescript for /Volumes/Extreme SSD/myblog/myblog-ec2
+INFO  2025-10-01 20:59:17,453 solidlsp:_start_server:224 - Starting TypeScript server process
+INFO  2025-10-01 20:59:17,453 solidlsp.ls_handler:start:189 - Starting language server process via command: ['/Users/super/.serena/language_servers/static/TypeScriptLanguageServer/ts-lsp/node_modules/.bin/typescript-language-server', '--stdio']
+INFO  2025-10-01 20:59:17,455 solidlsp:_start_server:228 - Sending initialize request from LSP client to LSP server and awaiting response
+INFO  2025-10-01 20:59:17,506 solidlsp:window_log_message:207 - LSP: window/logMessage: {"type": 3, "message": "Using Typescript version (workspace) 5.9.2 from path "/Volumes/Extreme SSD/myblog/myblog-ec2/node_modules/typescript/lib/tsserver.js""}
+INFO  2025-10-01 20:59:18,512 solidlsp:_start_server:246 - Timeout waiting for TypeScript server to become ready, proceeding anyway
+INFO  2025-10-01 20:59:18,512 serena.agent:stop:336 - Language server initialization completed in 1.100 seconds
+INFO  2025-10-01 20:59:18,512 serena.agent:stop:336 - Task-1[init_language_server] completed in 1.101 seconds
+INFO  2025-10-01 20:59:18,512 serena.agent:start:329 - Task-2[<lambda>] starting ...
+INFO  2025-10-01 20:59:18,515 serena.agent:stop:336 - Task-2[<lambda>] completed in 0.003 seconds
+INFO  2025-10-01 20:59:18,515 serena.cli:health_check:597 - GetSymbolsOverviewTool returned 5 symbols
+INFO  2025-10-01 20:59:18,515 serena.cli:health_check:618 - No class or function found, using first available symbol
+INFO  2025-10-01 20:59:18,515 serena.cli:health_check:622 - Using symbol for testing: __dirname (kind: 14)
+INFO  2025-10-01 20:59:18,515 serena.cli:health_check:625 - Testing FindSymbolTool for symbol: __dirname
+INFO  2025-10-01 20:59:18,515 serena.agent:issue_task:420 - Scheduling Task-3[<lambda>]
+INFO  2025-10-01 20:59:18,515 serena.agent:start:329 - Task-3[<lambda>] starting ...
+INFO  2025-10-01 20:59:18,516 serena.agent:stop:336 - Task-3[<lambda>] completed in 0.001 seconds
+INFO  2025-10-01 20:59:18,516 serena.cli:health_check:630 - FindSymbolTool found 1 matches for symbol __dirname
+INFO  2025-10-01 20:59:18,516 serena.cli:health_check:633 - Testing FindReferencingSymbolsTool for symbol: __dirname
+INFO  2025-10-01 20:59:18,516 serena.agent:issue_task:420 - Scheduling Task-4[<lambda>]
+INFO  2025-10-01 20:59:18,516 serena.agent:start:329 - Task-4[<lambda>] starting ...
+WARNING 2025-10-01 20:59:19,529 solidlsp:request_referencing_symbols:1294 - Could not find containing symbol for eslint.config.mjs:8:17. Returning file symbol instead
+INFO  2025-10-01 20:59:19,530 serena.agent:stop:336 - Task-4[<lambda>] completed in 1.014 seconds
+INFO  2025-10-01 20:59:19,530 serena.cli:health_check:637 - FindReferencingSymbolsTool found 1 references for symbol __dirname
+INFO  2025-10-01 20:59:19,530 serena.cli:health_check:643 - Testing SearchForPatternTool for pattern: __dirname
+INFO  2025-10-01 20:59:19,530 serena.agent:issue_task:420 - Scheduling Task-5[<lambda>]
+INFO  2025-10-01 20:59:19,530 serena.agent:start:329 - Task-5[<lambda>] starting ...
+INFO  2025-10-01 20:59:19,539 serena.text_utils:search_files:326 - Processing 7 files.
+INFO  2025-10-01 20:59:19,557 serena.text_utils:search_files:367 - Found 2 total matches across 7 files
+INFO  2025-10-01 20:59:19,557 serena.agent:stop:336 - Task-5[<lambda>] completed in 0.028 seconds
+INFO  2025-10-01 20:59:19,558 serena.cli:health_check:650 - SearchForPatternTool found 2 pattern matches for __dirname
+INFO  2025-10-01 20:59:19,558 serena.cli:health_check:664 - Health check completed successfully

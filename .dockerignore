@@ -1,0 +1,30 @@
+._*
+  .DS_Store
+
+  # Git
+  .git
+  .gitignore
+
+  # Node.js
+  node_modules
+  npm-debug.log
+  yarn-error.log
+
+  # Next.js
+  .next
+  out
+  build
+
+  # 環境変数
+  .env*.local
+
+  # IDE
+  .vscode
+  .idea
+  *.swp
+  *.swo
+
+  # その他
+  README.md
+  .docker
+  docker-compose*.yml

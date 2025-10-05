@@ -1,5 +1,6 @@
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { JSX } from 'react';
 
 interface IosApp {
@@ -45,9 +46,9 @@ const iosApps: IosApp[] = [
     <div className="scroll-smooth">
       <nav className="fixed top-0 right-0 p-6 z-50">
         <div className="flex gap-6">
-         <a href="#work" className="text-white hover:text-gray-300 transition-colors">work</a>
+         <Link href="#work" className="text-white hover:text-gray-300 transition-colors">work</Link>
          <Link href="/mypage/about" className="text-white hover:text-gray-300 transition-colors">about</Link>
-         <Link href="mypage/contact" className="text-white hover:text-gray-300 transition-colors">contact</Link>
+         <Link href="/mypage/contact" className="text-white hover:text-gray-300 transition-colors">contact</Link>
         </div>
       </nav>
 
@@ -67,10 +68,12 @@ const iosApps: IosApp[] = [
           {iosApps.map((app: IosApp) => (
           <div key={app.id} className="bg-gray-900 rounded-lg p-6 hover:transform hover:scale-105 transition-all">
             <div className="w-20 h-20 bg-gray-700 rounded-2xl mb-4 overflow-hidden">
-               <img 
-               src={app.icon} 
-               alt={app.name} 
-               className="w-full h-full object-cover rounded-2xl" /> 
+               <Image
+               src={app.icon}
+               alt={app.name}
+               width={80}
+               height={80}
+               className="w-full h-full object-cover rounded-2xl" />
             </div> 
             <h3 className="text-xl font-bold text-white mb-2">{app.name}</h3>
              <p className="text-gray-400 mb-4 whitespace-pre-line">{app.description}</p>
@@ -81,7 +84,7 @@ const iosApps: IosApp[] = [
                 </span>
               ))}
             </div>
-            <a href={app.appStoreUrl} className="inline-block px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition-colors">
+            <a href={app.appStoreUrl} target="_blank" rel="noopener noreferrer" className="inline-block px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition-colors">
               View on App Store
             </a>
             </div>
