@@ -23,7 +23,13 @@ COPY package*.json ./
 
 RUN npm ci
 
+# Install TypeScript Language Server for Serena MCP
+RUN npm install -g typescript-language-server typescript
+
 COPY . .
+
+# Create .serena cache directory with proper permissions
+RUN mkdir -p .serena/cache .serena/logs
 
 EXPOSE 3000
 
