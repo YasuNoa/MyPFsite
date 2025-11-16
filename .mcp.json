@@ -10,7 +10,7 @@
         "--context",
         "ide-assistant",
         "--project",
-        "/Volumes/Extreme SSD/myblog/myblog-ec2"
+        "/app"
       ]
     }
   }
