@@ -3,13 +3,48 @@
     "dockerComposeFile": "../docker-compose.yml",
     "service": "app",
     "workspaceFolder": "/app",
+    "features": {
+    // 【重要】gitコマンド本体（CLI）をインストール
+    "ghcr.io/devcontainers/features/git:1": {
+      "version": "latest"
+    },
+    // Jupyter（Python）拡張機能のためにPython本体もインストール
+    "ghcr.io/devcontainers/features/python:1": {
+      "version": "3.11"
+    }
+  },
     "shutdownAction": "stopCompose",
     "customizations": {
       "vscode": {
         "extensions": [
-          "dbaeumer.vscode-eslint",
-          "esbenp.prettier-vscode",
-          "bradlc.vscode-tailwindcss"
+          "anthropic.claude-code",
+        "github.copilot",
+        "github.copilot-chat",
+        "google.geminicodeassist",
+        "kodu-ai.claude-dev-experimental",
+        "openai.chatgpt",
+        "andrepimenta.claude-code-chat", // (もし不要なら // でコメントアウト)
+
+        // --- プロジェクト必須系 (React / Next.js) ---
+        "dbaeumer.vscode-eslint",         // ESLint (コードのエラーチェック)
+        "esbenp.prettier-vscode",       // Prettier (コードの自動整形)
+        "editorconfig.editorconfig",    // 複数人開発でコードスタイルを統一
+        
+        // --- 開発補助・スニペット系 ---
+        "dsznajder.es7-react-js-snippets", // React/Next.jsの雛形入力
+        "xabikos.javascriptsnippets",    // JavaScriptの雛形入力
+
+        // --- Python / Jupyter系 (要望により追加) ---
+        "ms-toolsai.jupyter",
+        "ms-toolsai.jupyter-keymap",
+        "ms-toolsai.jupyter-renderers",
+        "ms-toolsai.vscode-jupyter-cell-tags",
+        "ms-toolsai.vscode-jupyter-slideshow",
+
+        // --- その他・ユーティリティ系 ---
+        "googlecloudtools.cloudcode", // GCP連携
+        "mechatroner.rainbow-csv",    // CSV/TSVファイルを色付け
+        "ms-azuretools.vscode-docker" // Docker拡張機能 (コンテナ管理)
         ]
       }
     }
