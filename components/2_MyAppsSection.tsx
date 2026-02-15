@@ -12,7 +12,7 @@ interface IosApp {
   description: string;
   icon: string;
   techStack: string[];
-  appStoreUrl: string;
+  appStoreUrl?: string;
   features: string[];
 }
 
@@ -52,6 +52,19 @@ export function MyAppsSection({ id }: MyAppsSectionProps) {
       techStack: ["Swift", "UIkit"],
       appStoreUrl:
         "https://apps.apple.com/jp/app/%E8%B6%85%E3%82%BF%E3%82%B9%E3%82%AF%E7%AE%A1%E7%90%86/id6747072667?l=en-US",
+      features: [""],
+    },
+    {
+      id: 3,
+      name: "じぶんAI",
+      description: `授業を録音してAIが文字起こし・要約してくれるアプリです。
+
+    テスト前に授業内容を振り返ることができ、
+    大事な講義を漏れなくカバーできます。`,
+      icon: "/images/apps/jibunai-light.png",
+      techStack: ["Swift", "SwiftUI"],
+      appStoreUrl:
+        "https://apps.apple.com/jp/app/%E3%81%98%E3%81%B6%E3%82%93ai/id6757082916",
       features: [""],
     },
   ];
@@ -113,14 +126,20 @@ export function MyAppsSection({ id }: MyAppsSectionProps) {
                     </span>
                   ))}
                 </div>
-                <a
-                  href={app.appStoreUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-block px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition-colors"
-                >
-                  View on App Store
-                </a>
+                {app.appStoreUrl ? (
+                  <a
+                    href={app.appStoreUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition-colors"
+                  >
+                    View on App Store
+                  </a>
+                ) : (
+                  <span className="inline-block px-4 py-2 bg-gray-700 text-gray-400 rounded cursor-not-allowed">
+                    Coming Soon
+                  </span>
+                )}
               </div>
             ))}
           </div>
