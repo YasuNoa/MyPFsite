@@ -79,7 +79,7 @@ export function MyAppsSection({ id }: MyAppsSectionProps) {
   自分らしい回答をするAIアシスタントを構築できます。`,
       icon: "/images/apps/jibunai-light.png",
       techStack: ["Next.js", "TypeScript", "AI"],
-      webUrl: "https://jibunai.vercel.app/",
+      webUrl: "https://jibun-ai.com/",
       features: [""],
     },
   ];
