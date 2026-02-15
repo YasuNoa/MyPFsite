@@ -72,12 +72,12 @@ export function MyAppsSection({ id }: MyAppsSectionProps) {
   const webApps: WebApp[] = [
     {
       id: 1,
-      name: "自分AI",
+      name: "じぶんAI",
       description: `自分の分身となるAIを作成できるWebアプリケーションです。
 
   ユーザーは自分の知識や考え方を学習させることで、
   自分らしい回答をするAIアシスタントを構築できます。`,
-      icon: "/images/apps/jibun-ai-icon.png",
+      icon: "/images/apps/jibunai-light.png",
       techStack: ["Next.js", "TypeScript", "AI"],
       webUrl: "https://jibunai.vercel.app/",
       features: [""],
