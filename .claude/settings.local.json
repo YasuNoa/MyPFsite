@@ -7,7 +7,11 @@
       "mcp__serena__get_symbols_overview",
       "mcp__serena__find_symbol",
       "mcp__serena__search_for_pattern",
-      "Bash(uvx:*)"
+      "Bash(uvx:*)",
+      "Bash(npx eslint:*)",
+      "Bash(find:*)",
+      "Bash(test:*)",
+      "Bash(npm ls:*)"
     ]
   },
   "enableAllProjectMcpServers": true,

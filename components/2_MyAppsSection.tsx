@@ -62,7 +62,7 @@ export function MyAppsSection({ id }: MyAppsSectionProps) {
     テスト前に授業内容を振り返ることができ、
     大事な講義を漏れなくカバーできます。`,
       icon: "/images/apps/jibunai-light.png",
-      techStack: ["Swift", "SwiftUI"],
+      techStack: ["Swift", "SwiftUI", "Python", "Firebase"],
       appStoreUrl:
         "https://apps.apple.com/jp/app/%E3%81%98%E3%81%B6%E3%82%93ai/id6757082916",
       features: [""],

@@ -26,6 +26,9 @@ RUN npm ci
 # Install TypeScript Language Server for Serena MCP
 RUN npm install -g typescript-language-server typescript
 
+COPY prisma ./prisma/
+RUN npx prisma generate
+
 COPY . .
 
 # Create .serena cache directory with proper permissions
